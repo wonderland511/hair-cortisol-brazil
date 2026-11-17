@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Срез волос на кортизол</title>
+<meta name="description" content="Пошаговая инструкция: как срезать прядь волос для анализа кортизола, упаковать, подписать и хранить до передачи в лабораторию.">
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --surface: #ffffff;
+    --surface-2: #fafafc;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --line: #e3e3e8;
+    --accent: #0f7a68;
+    --accent-soft: #e2f3ef;
+    --warn: #9a5b00;
+    --warn-soft: #fcf1dc;
+    --risk: #b0362a;
+    --risk-soft: #fbe7e4;
+    --ok: #2f7a1f;
+    --ok-soft: #e7f4e1;
+    --radius: 20px;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000;
+      --surface: #1c1c1e;
+      --surface-2: #232326;
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --line: #333338;
+      --accent: #5fd0b8;
+      --accent-soft: #12302a;
+      --warn: #f0b64f;
+      --warn-soft: #33280f;
+      --risk: #ff8a7a;
+      --risk-soft: #3a1b17;
+      --ok: #9bd884;
+      --ok-soft: #1c3017;
+      --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000;
+    --surface: #1c1c1e;
+    --surface-2: #232326;
+    --text: #f5f5f7;
+    --muted: #a1a1a6;
+    --line: #333338;
+    --accent: #5fd0b8;
+    --accent-soft: #12302a;
+    --warn: #f0b64f;
+    --warn-soft: #33280f;
+    --risk: #ff8a7a;
+    --risk-soft: #3a1b17;
+    --ok: #9bd884;
+    --ok-soft: #1c3017;
+    --shadow: none;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 16px 72px; }
+
+  /* Появление — только CSS, без JS */
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .reveal { animation: fadeInUp .55s ease-out both; }
+  .reveal:nth-of-type(2) { animation-delay: .05s; }
+  .reveal:nth-of-type(3) { animation-delay: .1s; }
+  .reveal:nth-of-type(4) { animation-delay: .15s; }
+  .reveal:nth-of-type(5) { animation-delay: .2s; }
+  .reveal:nth-of-type(6) { animation-delay: .25s; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { animation: none; opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  header { margin-bottom: 22px; }
+  .eyebrow { color: var(--accent); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px; }
+  h1 { font-size: clamp(32px, 7vw, 48px); line-height: 1.08; letter-spacing: -.025em; margin: 0 0 14px; font-weight: 700; }
+  .lead { color: var(--muted); font-size: 19px; margin: 0; }
+
+  .deadline {
+    display: flex; gap: 16px; align-items: center;
+    background: var(--risk-soft); color: var(--text);
+    border-radius: var(--radius); padding: 18px 20px; margin: 24px 0 0;
+  }
+  .deadline .date {
+    flex: none; text-align: center; background: var(--surface); border-radius: 14px;
+    padding: 8px 14px; min-width: 76px; box-shadow: var(--shadow);
+  }
+  .deadline .date b { display: block; font-size: 30px; line-height: 1; color: var(--risk); letter-spacing: -.02em; }
+  .deadline .date span { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .deadline p { margin: 0; }
+  .deadline .left { font-weight: 600; color: var(--risk); margin-top: 4px; }
+
+  nav.chips {
+    position: sticky; top: 0; z-index: 5;
+    margin: 22px -16px 0; padding: 10px 16px;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px);
+    display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none;
+  }
+  nav.chips::-webkit-scrollbar { display: none; }
+  nav.chips a {
+    flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
+    border-radius: 999px; background: var(--surface); border: 1px solid var(--line);
+    color: var(--text); text-decoration: none; font-size: 15px; font-weight: 500;
+    transition: background .2s, border-color .2s;
+  }
+  nav.chips a:hover { border-color: var(--accent); }
+  nav.chips a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  section { margin-top: 36px; scroll-margin-top: 76px; position: relative; }
+  h2 { font-size: clamp(24px, 4.6vw, 30px); letter-spacing: -.02em; line-height: 1.15; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 16px; font-size: 16px; }
+
+  .card {
+    background: var(--surface); border-radius: var(--radius); padding: 8px; box-shadow: var(--shadow);
+    border: 1px solid var(--line);
+  }
+  .card.pad { padding: 20px 22px; }
+  .card p:last-child { margin-bottom: 0; }
+
+  /* Чек-листы */
+  .check { list-style: none; margin: 0; padding: 0; }
+  .check li + li { border-top: 1px solid var(--line); }
+  .check label {
+    display: grid; grid-template-columns: 32px 1fr; gap: 14px; align-items: start;
+    padding: 16px 14px; min-height: 60px; cursor: pointer; border-radius: 14px;
+    -webkit-tap-highlight-color: transparent; transition: background .15s;
+  }
+  .check label:hover { background: var(--surface-2); }
+  .check input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .box {
+    width: 28px; height: 28px; border-radius: 9px; border: 2px solid var(--line);
+    display: grid; place-items: center; margin-top: 1px; transition: background .2s, border-color .2s;
+  }
+  .box svg { width: 16px; height: 16px; stroke: #fff; stroke-width: 3; fill: none; opacity: 0; transition: opacity .15s; }
+  .check input:checked + .box { background: var(--accent); border-color: var(--accent); }
+  .check input:checked + .box svg { opacity: 1; }
+  .check input:focus-visible + .box { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .check input:checked ~ .txt { color: var(--muted); }
+  .check input:checked ~ .txt .t { text-decoration: line-through; text-decoration-color: var(--muted); }
+  .txt .t { font-weight: 600; display: block; }
+  .txt .d { display: block; color: var(--muted); font-size: 15.5px; margin-top: 2px; }
+  .num {
+    display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; margin-right: 6px;
+    vertical-align: 1px;
+  }
+
+  .progress { display: flex; align-items: center; gap: 12px; margin: 0 4px 12px; font-size: 14px; color: var(--muted); }
+  .bar { flex: 1; height: 6px; border-radius: 99px; background: var(--line); overflow: hidden; }
+  .bar i { display: block; height: 100%; width: 0; background: var(--accent); border-radius: 99px; transition: width .35s ease; }
+
+  .note { border-radius: 16px; padding: 14px 18px; margin: 14px 0 0; font-size: 16px; }
+  .note.info { background: var(--accent-soft); }
+  .note.warn { background: var(--warn-soft); }
+  .note p { margin: 0; }
+  .note b { color: var(--text); }
+
+  /* Ключевые цифры */
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 14px; }
+  .fact { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px; box-shadow: var(--shadow); }
+  .fact b { display: block; font-size: 24px; letter-spacing: -.02em; line-height: 1.1; color: var(--accent); }
+  .fact span { font-size: 13.5px; color: var(--muted); line-height: 1.35; display: block; margin-top: 4px; }
+
+  /* Этикетка конверта */
+  .label {
+    position: relative; border: 2px dashed var(--line); border-radius: 18px; padding: 18px 20px; margin-top: 14px;
+    background: var(--surface-2); font-size: 16px;
+  }
+  .label h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
+  .label dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; }
+  .label dt { color: var(--muted); }
+  .label dd { margin: 0; font-weight: 600; }
+  .label .pt { font-style: italic; }
+  .copy {
+    margin-top: 14px; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 0; cursor: pointer;
+    background: var(--accent); color: #fff; font: 600 15px/1 inherit; font-family: inherit;
+  }
+  :root[data-theme="dark"] .copy { color: #00110d; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .copy { color: #00110d; } }
+  .copy:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+  /* Хранение: да / нет */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .col { border-radius: var(--radius); padding: 18px 20px; }
+  .col.yes { background: var(--ok-soft); }
+  .col.no { background: var(--risk-soft); }
+  .col h3 { margin: 0 0 8px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  .col.yes h3 { color: var(--ok); }
+  .col.no h3 { color: var(--risk); }
+  .col ul { margin: 0; padding-left: 20px; }
+  .col li { margin: 6px 0; }
+  .col svg { width: 20px; height: 20px; flex: none; }
+
+  .dont { list-style: none; margin: 0; padding: 0; }
+  .dont li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 14px 14px; }
+  .dont li + li { border-top: 1px solid var(--line); }
+  .dont svg { width: 24px; height: 24px; color: var(--risk); }
+
+  /* Стикер */
+  .sticker {
+    position: absolute; right: 4px; top: -30px; width: 108px; height: 108px; border-radius: 50%;
+    border: 4px solid var(--surface); box-shadow: 0 6px 18px rgba(0,0,0,.18);
+    object-fit: cover; object-position: 30% 45%; transform: rotate(6deg); pointer-events: auto;
+    background: var(--surface);
+  }
+  .with-sticker h2, .with-sticker .sub { padding-right: 120px; }
+
+  footer { margin-top: 48px; color: var(--muted); font-size: 13.5px; line-height: 1.5; }
+  footer a { color: var(--muted); }
+  .toast {
+    position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(20px);
+    background: var(--text); color: var(--bg); padding: 12px 18px; border-radius: 999px; font-size: 15px;
+    opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 600px) {
+    .wrap { padding-top: 28px; }
+    .two { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .fact { padding: 12px 10px; }
+    .fact b { font-size: 20px; }
+    .fact span { font-size: 12.5px; }
+    .sticker { width: 86px; height: 86px; top: -22px; }
+    .with-sticker h2, .with-sticker .sub { padding-right: 96px; }
+    .label dl { grid-template-columns: 1fr; gap: 0; }
+    .label dd { margin-bottom: 8px; }
+  }
+  @media print {
+    nav.chips, .copy, .toast, .sticker { display: none !important; }
+    body { background: #fff; }
+    .card, .fact { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="reveal">
+    <p class="eyebrow">Анализ кортизола в волосах</p>
+    <h1>Как срезать прядь и&nbsp;хранить её до&nbsp;лаборатории</h1>
+    <p class="lead">Стандартный протокол, которого придерживаются ведущие лаборатории. Инструкции Feevale пока нет, поэтому прядь срезается с запасом.</p>
+
+    <div class="deadline" role="note">
+      <div class="date"><b>19</b><span>ноя 2026</span></div>
+      <div>
+        <p><b>Исходный образец нужно срезать до 19 ноября 2026.</b> Позже в отрезок 0–3 см попадёт заметная доля волос, выросших уже в Бразилии.</p>
+        <p class="left" id="daysLeft"></p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chips" aria-label="Разделы">
+    <a href="#prep">Подготовить</a>
+    <a href="#cut">Срезать</a>
+    <a href="#pack">Упаковать</a>
+    <a href="#store">Хранить</a>
+    <a href="#dont">Чего не делать</a>
+  </nav>
+
+  <!-- 1. Подготовка -->
+  <section id="prep" class="reveal">
+    <h2>Что подготовить</h2>
+    <p class="sub">Отметьте, что уже лежит под рукой. Галочки сохраняются в этом браузере.</p>
+    <div class="progress" data-group="prep"><div class="bar"><i></i></div><span class="count">0 из 5</span></div>
+    <div class="card">
+      <ul class="check" data-group="prep">
+        <li><label><input type="checkbox" data-id="p1"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Чистые острые ножницы</span><span class="d">Протереть спиртом и дать высохнуть.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="p2"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Зажим или заколку</span><span class="d">Чтобы отделить остальные волосы.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="p3"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Хлопковую нить</span></span></label></li>
+        <li><label><input type="checkbox" data-id="p4"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Алюминиевую фольгу и бумажный конверт</span><span class="d">На каждую прядь отдельно.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="p5"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Маркер</span></span></label></li>
+      </ul>
+    </div>
+    <div class="note warn"><p><b>В день среза</b> волосы должны быть сухими и чистыми, без геля, лака, масел и других средств для укладки. Срезать удобнее с помощником.</p></div>
+  </section>
+
+  <!-- 2. Как срезать -->
+  <section id="cut" class="reveal">
+    <h2>Как срезать</h2>
+    <p class="sub">Шесть шагов. Отмечайте по ходу.</p>
+
+    <div class="facts">
+      <div class="fact"><b>~3 мм</b><span>толщина пряди, как карандаш</span></div>
+      <div class="fact"><b>≤ 2–3 мм</b><span>остаток волос на коже</span></div>
+      <div class="fact"><b>4–5 см</b><span>длина от корня (минимум 3&nbsp;см)</span></div>
+    </div>
+
+    <div class="progress" data-group="cut"><div class="bar"><i></i></div><span class="count">0 из 6</span></div>
+    <div class="card">
+      <ol class="check" data-group="cut">
+        <li><label><input type="checkbox" data-id="c1"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t"><span class="num">1</span>Место: затылок, чуть ниже макушки</span><span class="d">Posterior vertex. Там волосы растут равномернее всего.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="c2"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t"><span class="num">2</span>Поднять верхний слой волос</span><span class="d">Взять прядь из-под него, тогда срез не будет заметен.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="c3"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t"><span class="num">3</span>Две пряди толщиной с карандаш (~3 мм)</span><span class="d">С соседних участков: одна для анализа, вторая в запас. Требование Feevale к массе пока неизвестно, а запас пригодится, если понадобится больше материала или повторный анализ.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="c4"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t"><span class="num">4</span>Перевязать прядь нитью у самой кожи</span><span class="d">До среза и как можно ближе к коже, чтобы волосы не рассыпались и конец у корня остался ровным.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="c5"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t"><span class="num">5</span>Срезать вплотную к коже, не дёргая</span><span class="d">Остаток не должен превышать 2–3 мм: всё, что остаётся на голове, сдвигает период, который покажет анализ.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="c6"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t"><span class="num">6</span>Длина: не меньше 3 см, лучше 4–5 см</span><span class="d">Тогда лаборатория сама точно отмерит сегмент 0–3 см. Если волосы длиннее, лишнее можно отрезать с дальнего конца.</span></span></label></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 3. Упаковка -->
+  <section id="pack" class="reveal with-sticker">
+    <img class="sticker" src="img/kitten.jpg" width="500" height="375" alt="Милый пушистый котёнок заглядывает в цветочный горшок" loading="lazy" decoding="async">
+    <h2>Как упаковать и подписать</h2>
+    <p class="sub">Каждую прядь упаковать отдельно.</p>
+    <div class="progress" data-group="pack"><div class="bar"><i></i></div><span class="count">0 из 3</span></div>
+    <div class="card">
+      <ul class="check" data-group="pack">
+        <li><label><input type="checkbox" data-id="k1"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Положить прядь ровно на фольгу</span><span class="d">Отметить корневой конец: например, нарисовать стрелку к нему с подписью «raiz» (корень). Нить оставить на месте.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="k2"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Сложить фольгу, не сминая прядь</span><span class="d">И положить в бумажный конверт.</span></span></label></li>
+        <li><label><input type="checkbox" data-id="k3"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="txt"><span class="t">Подписать конверт</span><span class="d">По образцу ниже.</span></span></label></li>
+      </ul>
+    </div>
+
+    <div class="label" id="envelope">
+      <h3>Что написать на конверте</h3>
+      <dl>
+        <dt>Код или имя</dt><dd>__________</dd>
+        <dt>Дата среза</dt><dd>__.__.2026</dd>
+        <dt>Место среза</dt><dd class="pt">vértice posterior</dd>
+        <dt>Корень</dt><dd><span class="pt">raiz = extremidade marcada</span> <span style="font-weight:400;color:var(--muted)">(«корень — отмеченный конец»)</span></dd>
+        <dt>Пометка</dt><dd>основная / запас</dd>
+      </dl>
+      <button class="copy" type="button" id="copyBtn">Скопировать текст для конверта</button>
+    </div>
+
+    <div class="note info">
+      <p><b>Отдельно записать для лаборатории:</b></p>
+      <ul style="margin:6px 0 0;padding-left:20px">
+        <li>окрашивание или осветление и дату последнего;</li>
+        <li>любые кортикостероиды (кремы, ингаляторы, таблетки, уколы);</li>
+        <li>как часто моются волосы.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. Хранение -->
+  <section id="store" class="reveal">
+    <h2>Как хранить до передачи</h2>
+    <p class="sub">Конверт хранить плоским и не перегибать прядь.</p>
+    <div class="two">
+      <div class="col yes">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Можно</h3>
+        <ul>
+          <li><b>При комнатной температуре, сухо, в темноте.</b> Подойдёт ящик стола или шкаф в комнате с кондиционером.</li>
+          <li>В Рио высокая влажность, поэтому конверт можно положить в закрытый пакет с пакетиком силикагеля, <b>если волосы полностью сухие</b>.</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg>Нельзя</h3>
+        <ul>
+          <li>В холодильнике и морозилке (образуется конденсат).</li>
+          <li>В ванной.</li>
+          <li>На солнце и рядом с источниками тепла.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note warn"><p><b>Срок:</b> несколько недель хранения допустимы. Отправить образец лучше сразу после согласования с лабораторией, не откладывая на месяцы.</p></div>
+  </section>
+
+  <!-- 5. Чего не делать -->
+  <section id="dont" class="reveal">
+    <h2>Чего не делать</h2>
+    <div class="card">
+      <ul class="dont">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M5 5l14 14"/></svg><span>Не красить и не осветлять волосы перед срезом.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M5 5l14 14"/></svg><span>Не стричься коротко на затылке до следующего образца (примерно начало февраля 2027), иначе не наберётся 3&nbsp;см.</span></li>
+      </ul>
+    </div>
+    <div class="note info"><p>Когда Feevale пришлёт свою инструкцию, сверьте с ней этот протокол. Если требования к массе или упаковке окажутся другими, <b>приоритет у инструкции лаборатории</b>.</p></div>
+  </section>
+
+  <footer>
+    <p>Источник: инструкция «Срез волос на кортизол» от 17 ноября 2026. Общий план анализа — <a href="../">на главной странице</a>.</p>
+    <p>Фото котёнка: «<a href="https://commons.wikimedia.org/wiki/File:Curious_kitten.jpg" rel="noopener">Curious kitten</a>», Julián Cantarelli, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener">CC BY-SA 3.0</a>, обрезано.</p>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  // Сколько дней осталось до 19.11.2026 включительно
+  var el = document.getElementById('daysLeft');
+  try {
+    var now = new Date();
+    var end = new Date(2026, 10, 19, 23, 59, 59);
+    var startToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var diff = Math.round((new Date(2026, 10, 19) - startToday) / 86400000);
+    if (now > end) el.textContent = 'Срок уже прошёл.';
+    else if (diff === 0) el.textContent = 'Последний день — сегодня.';
+    else if (diff === 1) el.textContent = 'Остался 1 день: последний — завтра.';
+    else el.textContent = 'Осталось дней: ' + diff + '.';
+  } catch (e) {}
+
+  // Чек-листы с сохранением
+  var KEY = 'cortisol-srez-v1';
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+  function update(group) {
+    var list = document.querySelector('.check[data-group="' + group + '"]');
+    var bar = document.querySelector('.progress[data-group="' + group + '"]');
+    if (!list || !bar) return;
+    var all = list.querySelectorAll('input'), done = 0;
+    for (var i = 0; i < all.length; i++) if (all[i].checked) done++;
+    bar.querySelector('i').style.width = (done / all.length * 100) + '%';
+    bar.querySelector('.count').textContent = done + ' из ' + all.length;
+  }
+  var inputs = document.querySelectorAll('.check input');
+  for (var i = 0; i < inputs.length; i++) {
+    (function (inp) {
+      inp.checked = !!state[inp.dataset.id];
+      inp.addEventListener('change', function () {
+        state[inp.dataset.id] = inp.checked; save();
+        update(inp.closest('.check').dataset.group);
+      });
+    })(inputs[i]);
+  }
+  ['prep', 'cut', 'pack'].forEach(update);
+
+  // Копирование текста для конверта
+  var toast = document.getElementById('toast'), t;
+  function showToast(msg) { toast.textContent = msg; toast.classList.add('show'); clearTimeout(t); t = setTimeout(function () { toast.classList.remove('show'); }, 1800); }
+  document.getElementById('copyBtn').addEventListener('click', function () {
+    var txt = 'Код / имя: \nДата среза: \nМесто среза: vértice posterior\nraiz = extremidade marcada\nосновная / запас';
+    var done = function () { showToast('Скопировано'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(done, function () { showToast('Не удалось скопировать'); });
+    } else {
+      var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) { showToast('Не удалось скопировать'); }
+      document.body.removeChild(ta);
+    }
+  });
+})();
+</script>
+
+<!-- Framer Motion (motion): только некритичные hover/tap-эффекты, видимость не зависит от скрипта -->
+<script type="module">
+(async () => {
+  try {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const { animate } = await import('https://cdn.jsdelivr.net/npm/motion@11.18.2/+esm');
+    const sticker = document.querySelector('.sticker');
+    if (sticker) {
+      const wiggle = () => animate(sticker, { rotate: [6, -8, 10, -4, 6], scale: [1, 1.08, 1] }, { duration: 0.7 });
+      sticker.addEventListener('pointerenter', wiggle);
+      sticker.addEventListener('pointerdown', wiggle);
+    }
+    document.querySelectorAll('.check input').forEach((inp) => {
+      inp.addEventListener('change', () => {
+        if (inp.checked) animate(inp.nextElementSibling, { scale: [0.8, 1.15, 1] }, { duration: 0.35 });
+      });
+    });
+    document.querySelectorAll('.fact, .copy, nav.chips a').forEach((el) => {
+      el.addEventListener('pointerdown', () => animate(el, { scale: 0.96 }, { duration: 0.12 }));
+      const up = () => animate(el, { scale: 1 }, { duration: 0.2 });
+      el.addEventListener('pointerup', up);
+      el.addEventListener('pointerleave', up);
+    });
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
